@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="expTrkForm" onsubmit="addExpense(event)">
+        <label for="expAmt">Expense Amount</label>
+        <input type="number" id="amount">
+        <label for="expAmt">Expense Description</label>
+        <input type="text" id="desc">
+        <select id="category">
+            <option>Movie</option>
+            <option>Travel</option>
+            <option>Edibles</option>
+            <option>Shopping</option>
+        </select>
+        <input type="submit" value="Add Expense">
+    </form>
+
+    <ul id="expenseList"></ul>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+<script src="main.js"></script>
+</html>
